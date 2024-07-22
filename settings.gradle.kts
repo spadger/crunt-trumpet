@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CruntTrumpet"
 include(":app")
+include(":client")
