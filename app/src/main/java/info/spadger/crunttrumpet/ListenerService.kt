@@ -16,7 +16,6 @@ import com.pusher.client.channel.Channel
 import com.pusher.client.connection.ConnectionEventListener
 import com.pusher.client.connection.ConnectionState
 import com.pusher.client.connection.ConnectionStateChange
-import info.spadger.crunttrumpet.MainActivity.Companion.MESSAGE_EXTRAS_KEY
 import org.json.JSONObject
 
 class ListenerService : Service() {
@@ -78,9 +77,9 @@ class ListenerService : Service() {
             }
 
             override fun onError(
-                message: String,
-                code: String,
-                e: Exception
+                message: String?,
+                code: String?,
+                e: Exception?
             ) {
                 Log.e(
                     "Pusher",
